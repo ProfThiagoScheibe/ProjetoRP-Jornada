@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Volume e Área</title>
+</head>
+<body>
+    <h1>Calculadora de Volume e Área</h1>
+    
+    <!-- Cubo -->
+    <h2>Cubo</h2>
+    <label for="cuboLado">Lado do Cubo:</label>
+    <input type="number" id="cuboLado">
+    <button onclick="calcularVolumeCubo()">Calcular Volume</button>
+    <button onclick="calcularAreaCubo()">Calcular Área</button>
+    <p id="cuboResultado"></p>
+
+    <!-- Paralelepípedo -->
+    <h2>Paralelepípedo</h2>
+    <label for="paralelepipedoComprimento">Comprimento:</label>
+    <input type="number" id="paralelepipedoComprimento">
+    <label for="paralelepipedoLargura">Largura:</label>
+    <input type="number" id="paralelepipedoLargura">
+    <label for="paralelepipedoAltura">Altura:</label>
+    <input type="number" id="paralelepipedoAltura">
+    <button onclick="calcularVolumeParalelepipedo()">Calcular Volume</button>
+    <button onclick="calcularAreaParalelepipedo()">Calcular Área</button>
+    <p id="paralelepipedoResultado"></p>
+
+    <!-- Esfera -->
+    <h2>Esfera</h2>
+    <label for="esferaRaio">Raio da Esfera:</label>
+    <input type="number" id="esferaRaio">
+    <button onclick="calcularVolumeEsfera()">Calcular Volume</button>
+    <button onclick="calcularAreaEsfera()">Calcular Área</button>
+    <p id="esferaResultado"></p>
+
+    <!-- Cone -->
+    <h2>Cone</h2>
+    <label for="coneRaio">Raio da Base:</label>
+    <input type="number" id="coneRaio">
+    <label for="coneAltura">Altura do Cone:</label>
+    <input type="number" id="coneAltura">
+    <button onclick="calcularVolumeCone()">Calcular Volume</button>
+    <button onclick="calcularAreaCone()">Calcular Área</button>
+    <p id="coneResultado"></p>
+</body>
+<script src="main.js"></script>
+</html>
