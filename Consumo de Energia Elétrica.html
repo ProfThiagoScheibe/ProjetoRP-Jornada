@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Consumo de Energia</title>
+</head>
+<body>
+    <h1>Calculadora de Consumo de Energia Elétrica</h1>
+    <form>
+        <label>Potência (W): <input type="number" id="potencia"></label><br>
+        <label>Tempo de uso (horas por dia): <input type="number" id="tempo"></label><br>
+        <label>Período de uso (dias por mês): <input type="number" id="periodo"></label><br>
+        <label>Taxa de consumo (R$/kWh): <input type="number" id="taxa"></label><br>
+        <button type="button" onclick="calcularConsumo()">Calcular</button>
+    </form>
+    <div id="resultado"></div>
+    <script>
+        function calcularConsumo() {
+            const potencia = parseFloat(document.getElementById('potencia').value);
+            const tempo = parseFloat(document.getElementById('tempo').value);
+            const periodo = parseFloat(document.getElementById('periodo').value);
+            const taxa = parseFloat(document.getElementById('taxa').value);
+
+            const energia = (potencia * tempo * periodo) / 1000;
+            const custo = taxa * energia;
+
+            const resultado = `Consumo de Energia: ${energia.toFixed(2)} kWh<br>Custo: R$ ${custo.toFixed(2)}`;
+            document.getElementById('resultado').innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>
