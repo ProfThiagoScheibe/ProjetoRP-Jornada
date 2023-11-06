@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Área e Volume</title>
+</head>
+<body>
+    <h1>Calculadora de Área e Volume</h1>
+    <p>Escolha a forma:</p>
+    <select id="shapeSelect">
+        <option value="cubo">Cubo</option>
+        <option value="cilindro">Cilindro</option>
+        <option value="paralelepipedo">Paralelepípedo</option>
+        <option value="esfera">Esfera</option>
+        <option value="cone">Cone</option>
+        <option value="piramide">Pirâmide</option>
+    </select>
+
+    <div id="inputFields">
+        <p>Insira as dimensões:</p>
+        <div id="cubeInputs">
+            <label>Lado do Cubo: <input type="number" id="cubeSide"></label>
+        </div>
+        <div id="cylinderInputs">
+            <label>Raio do Cilindro: <input type="number" id="cylinderRadius"></label>
+            <label>Altura do Cilindro: <input type="number" id="cylinderHeight"></label>
+        </div>
+        <div id="rectangularPrismInputs">
+            <label>Comprimento: <input type="number" id="rectangularPrismLength"></label>
+            <label>Largura: <input type="number" id="rectangularPrismWidth"></label>
+            <label>Altura: <input type="number" id="rectangularPrismHeight"></label>
+        </div>
+        <div id="sphereInputs">
+            <label>Raio da Esfera: <input type="number" id="sphereRadius"></label>
+        </div>
+        <div id="coneInputs">
+            <label>Raio da Base: <input type="number" id="coneRadius"></label>
+            <label>Altura do Cone: <input type="number" id="coneHeight"></label>
+        </div>
+        <div id="pyramidInputs">
+            <label>Comprimento da Base: <input type="number" id="pyramidLength"></label>
+            <label>Largura da Base: <input type="number" id="pyramidWidth"></label>
+            <label>Altura da Pirâmide: <input type="number" id="pyramidHeight"></label>
+        </div>
+    </div>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="result">
+        <p>Área: <span id="areaResult"></span></p>
+        <p>Volume: <span id="volumeResult"></span></p>
+    </div>
+
+    <script src="main2.js"></script>
+</body>
+</html>
