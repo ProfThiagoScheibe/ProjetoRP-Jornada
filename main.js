@@ -53,3 +53,17 @@ function calcularAreaCone() {
     const area = Math.PI * raio * (raio + geratriz);
     document.getElementById("coneResultado").textContent = `Área do Cone: ${area}`;
 }
+
+function calcularVolumeCilindro() {
+    const raio = parseFloat(document.getElementById("cilindroRaio").value);
+    const altura = parseFloat(document.getElementById("cilindroAltura").value);
+    const area = 2 * Math.PI * raio * (raio + altura);
+    document.getElementById("cilindroResultado").textContent = `Volume do Cilindro: ${volume}`;
+}
+
+function calcularAreaCilindro() {
+    const raio = parseFloat(document.getElementById("cilindroRaio").value);
+    const altura = parseFloat(document.getElementById("cilindroAltura").value);
+    const volume = Math.PI * Math.pow(raio, 2) * altura;
+    document.getElementById("cilindroResultado").textContent = `Área do Cilindro: ${area}`;
+}
